@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zavier Morgan Eportfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c5684e4355.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+</head>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "xcxMSVIwVWBh_sf-5",
+      });
+   })();
+</script>
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="assets/Eporfolio Logo ZM.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          ">Contact</a>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+          nav__link--anchor
+          link__hover-effect
+          link__hover-effect--black
+          "><i class="fa-solid fa-circle-half-stroke"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hay</h1>
+        <h1 class="title--secondary main-color">Im Zavier.</h1>
+        <p class="header__para">I'm a <b class="main-color">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences. and Specialize in coding
+          <br>
+          Here's a bit more <b class="main-color click" onclick="toggleModal()">about me.</b>
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/zavier-morgan-529978269/" target="_blank" class="social__link click">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Zmorgan502-dev" target="_blank" class="social__link click">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="assets/ZM Resume.pdf" target="_blank" class="social__link click">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#"><button class="mail__btn click" onclick="toggleModal()"><i class="fa-solid fa-envelope"></i>
+    </button></a>
+    
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click">
+      </div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+        <p class="modal__para">
+          I'm a 26 year old Amarican <b class="main-color">frontend software engineer</b> with a strong passion for developing websites with great <b class="main-color">user experiences.</b>
+          <br>
+          I am equipped to tackle highly sophisticated software engineering problems while continuously refining my skills under the guidance of senior technical talent.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://th.bing.com/th/id/OIP.eTgg667XGd11kvh3qtoWAwHaHa?w=175&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://th.bing.com/th/id/OIP.xhnzhHcorvOTDzjLVg0LAwHaI4?w=143&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="data:image/webp;base64,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" alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fa-solid fa-circle-xmark modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+        <h4 class=" modal__sub-title--contact modal__sub-title">I'm open to new opportunities.</h4>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label" >Name</label>
+            <input class="imput" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" >Email</label>
+            <input class="imput" name="user_email" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" >Message</label>
+            <textarea class="imput" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-circle-notch"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="assets/semi circle.svg" class="shape shape--0">
+    <img src="assets/circle.svg" class="shape shape--1">
+    <img src="assets/squiggly.svg" class="shape shape--2">
+    <img src="assets/circle.svg" class="shape shape--3">
+    <img src="assets/triangle.svg" class="shape shape--4">
+    <img src="assets/circle.svg" class="shape shape--5">
+    <img src="assets/squiggly.svg" class="shape shape--6">
+    <img src="assets/circle.svg" class="shape shape--7">
+    <img src="assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="main-color">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="assets/blinker mockup.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  My first major project
+                </h3>
+                <h4 class="project__decstiption--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  This is my first major solo project, built entirely from scratch from start to finish. I developed the application using HTML, CSS, and vanilla JavaScript to bring the core functionality to life.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Zmorgan502-dev/First-Project-Treact.git"
+                  target="_blank" class="project__description--link click">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://zmorgan502-dev.github.io/First-Project-Treact/" target="_blank" class="project__description--link click">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="assets/blinker mockup.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  My first mini project
+                </h3>
+                <h4 class="project__decstiption--sub-title">
+                  Html, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  This is my first mini solo project, built entirely from scratch from start to finish. I developed the application using HTML, CSS, and vanilla JavaScript to bring the core functionality to life.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Zmorgan502-dev/mini-project.git"
+                  target="_blank" class="project__description--link click">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://zmorgan502-dev.github.io/mini-project/" target="_blank" class="project__description--link click">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+      <figure>
+        <img class="footer__logo--img" src="assets/Eporfolio Logo ZM.png" alt="">
+      </figure>
+      <div class="footer__social--links">
+        <a href="https://github.com/Zmorgan502-dev" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        ">
+        GitHub
+      </a>
+        <a href="https://github.com/Zmorgan502-dev" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        ">
+        Linkedin
+      </a>
+        <a href="https://www.linkedin.com/in/zavier-morgan-529978269/" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        ">
+        Contact
+      </a>
+        <a href="assets/ZM Resume.pdf" target="_blank" class="
+        footer__social--link
+        link__hover-effect
+        link__hover-effect--white
+        ">
+        Resume
+      </a>
+      </div>
+      <div class="footer__copyright">Copyright © 2026 Zavier Morgan</div>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
